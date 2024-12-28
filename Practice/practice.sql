@@ -12,6 +12,7 @@ FROM
     Track
 
 -- 2
+/**
 SELECT
     -- Pipe operator used to concatenate values in one or more columns
     (FirstName || ' ' || LastName) AS "Employee",
@@ -45,3 +46,4 @@ WHERE
 ORDER BY
     Bytes DESC
 LIMIT 10
+**/
