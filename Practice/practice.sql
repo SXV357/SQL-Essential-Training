@@ -9,10 +9,9 @@ CASE
     ELSE 'Long'
     END AS "Length Category"
 FROM
-    Track
+    Track;
 
 -- 2
-/**
 SELECT
     -- Pipe operator used to concatenate values in one or more columns
     (FirstName || ' ' || LastName) AS "Employee",
@@ -27,7 +26,7 @@ ORDER BY
     -- will anyways be ordered from the oldest to the youngest since ascending is default
     HireDate
 -- gives top 5 most experiences employees
-LIMIT 5
+LIMIT 5;
 
 
 -- 3
@@ -45,5 +44,4 @@ WHERE
     (UnitPrice > 0.99) AND (Bytes > 7000000)
 ORDER BY
     Bytes DESC
-LIMIT 10
-**/
+LIMIT 10;
