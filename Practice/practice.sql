@@ -45,3 +45,13 @@ WHERE
 ORDER BY
     Bytes DESC
 LIMIT 10;
+
+-- 4. How many customers do we have whose last name begins with "S"?
+    -- 8 customers(filtered results which makes counting easier but manual counting still needed)
+
+SELECT
+    *
+FROM
+    Customer AS c
+WHERE
+    c.LastName LIKE "S%";
